@@ -1,8 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 body, html {
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: Arial, sans-serif;
 }                
 
 #map {
@@ -27,11 +26,13 @@ body, html {
 }
 
 img {
-    width: 300px;
+    width: 300px;          /* Maximum width of the image */
+    max-width: 100%;       /* Ensures the image is never wider than its container */
+    height: auto; 
 }
 
 .mapboxgl-popup {
-    max-width: 500px !important; 
+    max-width: 300px !important; 
 }
 
 #architectFilter {
@@ -45,3 +46,15 @@ img {
     background: whitesmoke;
     width: 200px;          /* Set a specific width if needed */
 }
+
+.mapboxgl-popup-content {
+    border-radius: 12px; /* Adjust this value to increase or decrease the roundness */
+    box-shadow: 0 3px 14px rgba(0,0,0,0.4); /* Optional: adds shadow for better visibility */
+    background-color: #FAF9F6; /* Change the background color */
+    color: #333; /* Change the text color */
+    font-family: Arial, sans-serif; /* Change the font */
+    padding: 10px 20px; /* Adjust padding inside the popup */
+    border: 1px solid #ccc; /* Add or change the border */
+}
+
+
