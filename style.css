@@ -55,6 +55,12 @@ img {
     font-family: Arial, sans-serif; /* Change the font */
     padding: 10px 20px; /* Adjust padding inside the popup */
     border: 1px solid #ccc; /* Add or change the border */
+    width: 300px; /* Fixed width */
+    max-width: 300px; /* Ensures that the popup does not grow wider than 300px */
+    min-height: 50px; /* Minimum height, adjust as needed */
+    overflow-wrap: break-word; /* Ensures text wraps and does not overflow */
+    overflow-y: auto; /* Adds a scrollbar if the content exceeds the popup height */
+    max-height: 400px; /* Maximum height before scrollbar appears */
 }
 
 
