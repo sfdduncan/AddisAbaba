@@ -18,7 +18,7 @@ let map = new mapboxgl.Map({
 
 // create an instance of NavigationControl
 let navigation = new mapboxgl.NavigationControl({
-    showCompass: true
+    showCompass: false
 })
 
 // add the navigation to your map
